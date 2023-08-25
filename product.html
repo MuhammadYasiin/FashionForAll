@@ -1,0 +1,1858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="product.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script>
+ $(document).ready(function(){
+
+  $("#mini1").click(function(){
+        $(".sel-img1").css("box-shadow","0px 0px 3px 3px white")
+        $(".sel-img2").css("box-shadow","0px 0px 0px 0px white")
+        $(".sel-img3").css("box-shadow","0px 0px 0px 0px white")
+        $("#cart-img").css("display","none")
+       $("#cart-img2").css("display","none")
+       $("#cart-img3").css("display","none")
+       $("#cart-img1").css("display","block")
+      });
+      $("#mini2").click(function(){
+
+        $(".sel-img1").css("box-shadow","0px 0px 0px 0px white")
+        $(".sel-img2").css("box-shadow","0px 0px 3px 3px white")
+        $(".sel-img3").css("box-shadow","0px 0px 0px 0px white")
+        $("#cart-img").css("display","none")
+        $("#cart-img3").css("display","none")
+        $("#cart-img1").css("display","none")
+       $("#cart-img2").css("display","block")
+      })
+      $("#mini3").click(function(){
+        $(".sel-img1").css("box-shadow","0px 0px 0px 0px white")
+        $(".sel-img2").css("box-shadow","0px 0px 0px 0px white")
+        $(".sel-img3").css("box-shadow","0px 0px 3px 3px white")
+        $("#cart-img").css("display","none")
+        $("#cart-img1").css("display","none")
+        $("#cart-img2").css("display","none")
+       $("#cart-img3").css("display","block")
+      });
+
+
+
+      $("#top-input").keydown(function(){
+    $(".search-appear-div").css("display","flex");
+  })
+
+      $('.search').click(function(){
+      $('.father-inp').css("display","flex");
+    })
+
+      $('.cut').click(function(){
+        $('.father-inp').slideUp();
+        $(".search-appear-div").hide();
+      });
+    
+    });
+</script>
+<body>
+
+  <!-- <div class="search-appear-div">
+    <div class=" search-prod" >
+      <div class="card cards" id="cards" >
+        <img src="https://media.istockphoto.com/id/1142213171/photo/men-cut-black-t-shirt-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=wSFzYB2W127NFyVWbexCjAnVHQ-qc-bKDCewgzHKM8I=" class="card-img-top img1" alt="...">
+        <img src="https://media.istockphoto.com/id/1400254177/photo/wooden-hangers-with-sweaters-over-beige-background-with-copy-space-clothing-donations.jpg?s=1024x1024&w=is&k=20&c=WbJwBkHFF6lV6mxacO1ZxLF_ucXYxl7rQUUBzAGIvvE="  style="display: none;" class="img2" alt="...">
+        <img src="https://media.istockphoto.com/id/1144491656/photo/mens-summer-casual-clothes-flat-lay.jpg?s=1024x1024&w=is&k=20&c=eNdzOb9bddMiQ80D4JvatafCeX3deh2g_qPX57TRr0w="  style="display: none;" class="img3" class="card-img-top" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> hoodie </h1>
+        <p> <label id="label1" class="gene">Gene: <span>female </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+        </div>
+  <div class="card cards" id="cards"  >
+  <img src="https://media.istockphoto.com/id/1427972687/photo/t-shirt-isolated.jpg?s=612x612&w=0&k=20&c=ioUj8cwglNDg0eEX4plQJL5Bqi5Awmx9Neo5xz4uSH0=" class="card-img-top img1" alt="...">
+  <img src="https://media.istockphoto.com/id/1400254177/photo/wooden-hangers-with-sweaters-over-beige-background-with-copy-space-clothing-donations.jpg?s=1024x1024&w=is&k=20&c=WbJwBkHFF6lV6mxacO1ZxLF_ucXYxl7rQUUBzAGIvvE="  style="display: none;" class="img2" alt="...">
+  <img src="https://media.istockphoto.com/id/1144491656/photo/mens-summer-casual-clothes-flat-lay.jpg?s=1024x1024&w=is&k=20&c=eNdzOb9bddMiQ80D4JvatafCeX3deh2g_qPX57TRr0w="  style="display: none;" class="img3" class="card-img-top" alt="...">
+  <div class="card-body content">
+    <div class="crd-cont">
+     
+  <h1 class="name"> hiek </h1>
+  <p> <label id="label1" class="gene">Gene: <span>female </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+  
+    </div>
+  
+    <div class="cont-div2">
+      <h3 class="pri">PKR: 1500</h3>
+  <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+      
+    </div>
+  </div>
+  </div>
+  <div class="card cards" id="cards"  >
+  <img src="https://media.istockphoto.com/id/1188591895/photo/mens-t-shirt-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=ZrfiVdzqq7L0isiCDO6S-Lomn6Kzv43c12ktZgzWQ9g=" class="card-img-top img1" alt="...">
+  <img src="https://media.istockphoto.com/id/1400254177/photo/wooden-hangers-with-sweaters-over-beige-background-with-copy-space-clothing-donations.jpg?s=1024x1024&w=is&k=20&c=WbJwBkHFF6lV6mxacO1ZxLF_ucXYxl7rQUUBzAGIvvE="  style="display: none;" class="img2" alt="...">
+  <img src="https://media.istockphoto.com/id/1144491656/photo/mens-summer-casual-clothes-flat-lay.jpg?s=1024x1024&w=is&k=20&c=eNdzOb9bddMiQ80D4JvatafCeX3deh2g_qPX57TRr0w="  style="display: none;" class="img3" class="card-img-top" alt="...">
+  <div class="card-body content">
+    <div class="crd-cont">
+     
+  <h1 class="name"> Blue jeans </h1>
+  <p> <label id="label1" class="gene">Gene: <span>female </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+  
+    </div>
+  
+    <div class="cont-div2">
+      <h3 class="pri">PKR: 1500</h3>
+  <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+      
+    </div>
+  </div>
+  </div>
+  <div class="card cards"  id="cards" >
+  <img src="https://media.istockphoto.com/id/1165693363/photo/blue-womens-dress-female-dress-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=PKrf1b7Nd9brH3qpYlJ3IQvuJavxxM6HbzlzeD8C2EM=" class="card-img-top img1" alt="...">
+  <img src="https://media.istockphoto.com/id/1400254177/photo/wooden-hangers-with-sweaters-over-beige-background-with-copy-space-clothing-donations.jpg?s=1024x1024&w=is&k=20&c=WbJwBkHFF6lV6mxacO1ZxLF_ucXYxl7rQUUBzAGIvvE="  style="display: none;" class="img2" alt="...">
+  <img src="https://media.istockphoto.com/id/1144491656/photo/mens-summer-casual-clothes-flat-lay.jpg?s=1024x1024&w=is&k=20&c=eNdzOb9bddMiQ80D4JvatafCeX3deh2g_qPX57TRr0w="  style="display: none;" class="img3" class="card-img-top" alt="...">
+  <div class="card-body content">
+    <div class="crd-cont">
+     
+  <h1 class="name"> carbo jeans </h1>
+  <p> <label id="label1" class="gene">Gene: <span>female </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+  
+    </div>
+  
+    <div class="cont-div2">
+      <h3 class="pri">PKR: 1500</h3>
+  <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+      
+    </div>
+  </div>
+  </div>
+      <div class="card cards" id="cards" >
+        <img src="https://media.istockphoto.com/id/1469187574/photo/ripped-jeans-on-a-white-background-womens-clothing.jpg?s=612x612&w=0&k=20&c=U7RpEMJgFlBoh_HgAzwd9cQFVrUPcJYpxznBvFY6jLc=" class="card-img-top img1" alt="...">
+        <img src="https://media.istockphoto.com/id/1400254177/photo/wooden-hangers-with-sweaters-over-beige-background-with-copy-space-clothing-donations.jpg?s=1024x1024&w=is&k=20&c=WbJwBkHFF6lV6mxacO1ZxLF_ucXYxl7rQUUBzAGIvvE="  style="display: none;" class="img2" alt="...">
+        <img src="https://media.istockphoto.com/id/1144491656/photo/mens-summer-casual-clothes-flat-lay.jpg?s=1024x1024&w=is&k=20&c=eNdzOb9bddMiQ80D4JvatafCeX3deh2g_qPX57TRr0w="  style="display: none;" class="img3" class="card-img-top" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> kurti</h1>
+        <p> <label id="label1" class="gene">Gene: <span>female </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+        </div>
+  <div class="card cards" id="cards"  >
+  <img src="https://media.istockphoto.com/id/1334510184/photo/blue-jeans-trouser-isolated-on-the-white-background.jpg?s=612x612&w=0&k=20&c=49h0QyLcX7bpbv0VGXSrXX7m0UtoszzR31_zNd-0DS8=" class="card-img-top img1" alt="...">
+  <img src="https://media.istockphoto.com/id/1400254177/photo/wooden-hangers-with-sweaters-over-beige-background-with-copy-space-clothing-donations.jpg?s=1024x1024&w=is&k=20&c=WbJwBkHFF6lV6mxacO1ZxLF_ucXYxl7rQUUBzAGIvvE="  style="display: none;" class="img2" alt="...">
+  <img src="https://media.istockphoto.com/id/1144491656/photo/mens-summer-casual-clothes-flat-lay.jpg?s=1024x1024&w=is&k=20&c=eNdzOb9bddMiQ80D4JvatafCeX3deh2g_qPX57TRr0w="  style="display: none;" class="img3" class="card-img-top" alt="...">
+  <div class="card-body content">
+    <div class="crd-cont">
+     
+  <h1 class="name"> jet black jeans  </h1>
+  <p> <label id="label1" class="gene">Gene: <span>female </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+  
+    </div>
+  
+    <div class="cont-div2">
+      <h3 class="pri">PKR: 1500</h3>
+  <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+      
+    </div>
+  </div>
+  </div>
+  <div class="card cards" id="cards"  >
+  <img src="https://media.istockphoto.com/id/926514864/photo/childrens-jeans-isolated-male.jpg?s=612x612&w=0&k=20&c=8c7I_8Ux4hina9cX-iOGwuKkLnXxSIb76t05Ee4FWvE=" class="card-img-top img1" alt="...">
+  <img src="https://media.istockphoto.com/id/1400254177/photo/wooden-hangers-with-sweaters-over-beige-background-with-copy-space-clothing-donations.jpg?s=1024x1024&w=is&k=20&c=WbJwBkHFF6lV6mxacO1ZxLF_ucXYxl7rQUUBzAGIvvE="  style="display: none;" class="img2" alt="...">
+  <img src="https://media.istockphoto.com/id/1144491656/photo/mens-summer-casual-clothes-flat-lay.jpg?s=1024x1024&w=is&k=20&c=eNdzOb9bddMiQ80D4JvatafCeX3deh2g_qPX57TRr0w="  style="display: none;" class="img3" class="card-img-top" alt="...">
+  <div class="card-body content">
+    <div class="crd-cont">
+     
+  <h1 class="name"> blue shirt</h1>
+  <p> <label id="label1" class="gene">Gene: <span>female </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+  
+    </div>
+  
+    <div class="cont-div2">
+      <h3 class="pri">PKR: 1500</h3>
+  <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+      
+    </div>
+  </div>
+  </div>
+  <div class="card cards"  id="cards" >
+  <img src="https://media.istockphoto.com/id/1003018352/photo/blue-ragged-jeans-on-a-white-background-isolate-fashionable-concept.jpg?s=612x612&w=0&k=20&c=OmdshsiA26cDqfE1bUVIa1cM1koxPj_qpCcCDQa34gc=" class="card-img-top img1" alt="...">
+  <img src="https://media.istockphoto.com/id/1400254177/photo/wooden-hangers-with-sweaters-over-beige-background-with-copy-space-clothing-donations.jpg?s=1024x1024&w=is&k=20&c=WbJwBkHFF6lV6mxacO1ZxLF_ucXYxl7rQUUBzAGIvvE="  style="display: none;" class="img2" alt="...">
+  <img src="https://media.istockphoto.com/id/1144491656/photo/mens-summer-casual-clothes-flat-lay.jpg?s=1024x1024&w=is&k=20&c=eNdzOb9bddMiQ80D4JvatafCeX3deh2g_qPX57TRr0w="  style="display: none;" class="img3" class="card-img-top" alt="...">
+  <div class="card-body content">
+    <div class="crd-cont">
+     
+  <h1 class="name"> blue shirt </h1>
+  <p> <label id="label1" class="gene">Gene: <span>female </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+  
+    </div>
+  
+    <div class="cont-div2">
+      <h3 class="pri">PKR: 1500</h3>
+  <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+      
+    </div>
+  </div>
+  </div>
+  </div> -->
+   
+  </div>
+  <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+    <div class="modal-dialog modal-xl " >
+      <div class="modal-content ">
+        <div class="modal-header color">
+          <!-- <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1> -->
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body color modal-size">
+  
+        </div>
+     
+      </div>
+    </div>
+  </div>
+  <div class="modal fade " id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+    <div class="modal-dialog  modal-title" >
+      <div class="modal-content ">
+        <div class="modal-header color">
+          <!-- <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1> -->
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body color">
+  
+          <form class="row g-3" id="sign-form">
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">First name </label>
+              <input type="text" class="form-control inputs" id="inputss"  >
+            </div>
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">Last name</label>
+              <input type="text" class="form-control inputs" id="inputss" >
+            </div>
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control inputs" id="inputss">
+            </div>
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">Password</label>
+              <input type="password" class="form-control inputs" id="inputss">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Address</label>
+              <input type="text" class="form-control inputs" id="inputss">
+            </div>
+         
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">City</label>
+              <input type="text" class="form-control inputs" id="inputss">
+            </div>
+            <div class="col-md-6">
+              <label for="inputState" class="form-label">State</label>
+              <select  class="form-select inputs"   id="inputss">
+                <option selected>Choose...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="col-12" style="display: flex;justify-content: end;">
+              <button type="submit" id="sign-up" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close" >Sign in</button>
+             
+              <input type="button" onclick="log()" class="btn btn-primary" id="sign-up" value="login">
+            </div>
+          </form>
+          <div id="log-forms">
+  
+          <form class="row g-3" >
+           
+            <div class="col-md-12">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control inputs" id="inputss">
+            </div>
+            <div class="col-md-12">
+              <label for="inputPassword4" class="form-label">Password</label>
+              <input type="password" class="form-control inputs" id="inputss">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Address</label>
+              <input type="text" class="form-control inputs" id="inputss">
+            </div>
+            </div>
+            <div class="col-12" id="logbtns" style="display: none;">
+              <button type="submit" id="login" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">login</button>
+             
+              <input  type="button" value="Sign in" id="sign-up" class="btn btn-primary" onclick="sign()" >
+            </div>
+  
+          </form>
+  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+   <!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button> -->
+
+<!-- Modal -->
+<div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+  <div class="modal-dialog modal-xl " >
+    <div class="modal-content ">
+      <div class="modal-header color">
+        <!-- <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1> -->
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body color modal-size">
+        <div class="fath-cart">
+        
+          <div class="cart-img">
+            <div class="img-three">
+              <img src="https://media.istockphoto.com/id/1144491656/photo/mens-summer-casual-clothes-flat-lay.jpg?s=1024x1024&w=is&k=20&c=eNdzOb9bddMiQ80D4JvatafCeX3deh2g_qPX57TRr0w="  class="cart-photo" id="cart-img" alt="" srcset="">
+              <img src="https://media.istockphoto.com/id/1144491656/photo/mens-summer-casual-clothes-flat-lay.jpg?s=1024x1024&w=is&k=20&c=eNdzOb9bddMiQ80D4JvatafCeX3deh2g_qPX57TRr0w=" alt=""  id="cart-img1"  srcset="">
+              <img src="https://images.unsplash.com/photo-1594750863984-8be99377ce41?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80"  id="cart-img2" alt="" srcset="">
+              <img src="https://media.istockphoto.com/id/1400254177/photo/wooden-hangers-with-sweaters-over-beige-background-with-copy-space-clothing-donations.jpg?s=1024x1024&w=is&k=20&c=WbJwBkHFF6lV6mxacO1ZxLF_ucXYxl7rQUUBzAGIvvE=" id="cart-img3" alt="" srcset="">
+            </div>
+              <div class="sel-img">
+                  <img src="https://media.istockphoto.com/id/1144491656/photo/mens-summer-casual-clothes-flat-lay.jpg?s=1024x1024&w=is&k=20&c=eNdzOb9bddMiQ80D4JvatafCeX3deh2g_qPX57TRr0w=" class="sel-img1" id="mini1" alt="" srcset="">
+                  <img src="https://images.unsplash.com/photo-1594750863984-8be99377ce41?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80"  class="sel-img2" id="mini2" alt="" srcset="">
+                  <img src="https://media.istockphoto.com/id/1400254177/photo/wooden-hangers-with-sweaters-over-beige-background-with-copy-space-clothing-donations.jpg?s=1024x1024&w=is&k=20&c=WbJwBkHFF6lV6mxacO1ZxLF_ucXYxl7rQUUBzAGIvvE=" class="sel-img3" id="mini3" alt="" srcset="">
+              </div>
+          </div>
+          <div class="cart-sec">
+            <div class="cart-half1">
+              <div class="half1-ch1">
+              <div class="pname"><h1>Lorem, ipsum </h1></div>
+              <div class="detail">
+            <label>lorem ipusm</label>
+            <label >-</label>
+            <label>gene : male</label>
+            <label >-</label>
+            <label>age : Ranges</label>
+              </div>
+              <div class="stock">
+               <ul>
+                <li>In stock</li>
+               </ul>
+               <label >Upto 2 weeks</label>
+               
+              </div>
+              <h1 class="pkr">PKR 2,000</h1>
+            </div>
+            <div class="half1-ch2"> 
+          <div class="size">
+          <p>Size</p>
+          <select>
+            <option >small</option>
+            <option >smedium</option>
+            <option >large</option>
+          </select>
+          <p> Quantity</p>
+          <div class="quantity">
+          <label class="plus">-</label><label>1</label><label class="plus">+</label>
+        </div>
+          </div>
+        </div>
+      </div>
+        <div class="cart-half2">
+          <div class="end">
+            <div class="label">
+          <label >Estimated Shipping Date : <span class="date">jul 29, 2023</span></label>
+          </div>
+          <input type="button" value="Add to Cart">
+          <ul class="ul-1" >
+            <li><label>Product Description</label><label>></label>
+            <ul class="dis-drop">
+              <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam temporibus cupiditate odit. Exercitationem qui placeat, cumque architecto cum consequatur eaque? Inventore sed soluta illum ducimus fugiat nemo qui id dolorum!</li>
+            </ul></li>
+          </ul>
+          <ul class="ul-2">
+            <li><label>Product Description</label><label>></label>
+            <ul class="dis-drop">
+              <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam temporibus cupiditate odit. Exercitationem qui placeat, cumque architecto cum consequatur eaque? Inventore sed soluta illum ducimus fugiat nemo qui id dolorum!</li>
+            </ul></li>
+          </ul>
+          </div>
+        </div>
+          </div>
+                </div>
+      </div>
+     
+    </div>
+  </div>
+</div>
+
+  <div class="father-inp">
+  <div class="top-inp-div">
+<div class="input"><i class="fa-sharp fa-solid fa-magnifying-glass search-top"></i><input type="text" class="input" onkeydown="search()" id="top-input"></div><div class="cuts"><i class="fa-solid fa-xmark cut"></i></div>
+  </div>
+  
+</div>
+
+<div class="father-mini-menus">
+<div class="mini-menus" id="mini-menus">
+<div class="mini-ul">
+  <a href="home.html" class="mini-links">Home</a>
+  <a href="product.html" class="mini-links" >Product</a>
+  <a href="#" class="mini-links" >Contact</a>
+</div>
+</div>
+
+<div class="father-cart">
+  <div class="cart-slider" id="cart-slider">
+    <p>Cart is Empty</p>
+  </div>
+  </div>
+</div>
+
+  <div class="nav-div">
+    
+  <nav class="navbar ">
+    <div class="container-fluid" id="log">
+      <a class="navbar-brand " id="logos" href="#">FashionForALL</a>
+      <div class="nav-clicks" >
+
+        <ul  id="menus">
+          <li class="nav-item">
+            <a class="nav-link active"  href="home.html" id="nav-links">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="product.html"  id="nav-links">product</a>
+          </li>
+           
+          <li class="nav-item3">
+            <a class="nav-link " href="#" id="nav-links">contact</a>
+          </li>
+        </ul>
+        </div>
+
+        <form class="search-sec">
+         
+        <div> <i class="fa-sharp fa-solid fa-magnifying-glass search" id="mar-icons1"></i></div> 
+        <div> <label id="mar">search</label></div> 
+        <div> <i class="fa-sharp fa-solid fa-cart-shopping" id="mar-icons" onclick="cart()" ></i></div> 
+        <div><labelm id="mar" >cart</label></div> 
+
+        <div style="display: flex;"><input type="button" value="Get started" id="mar1" data-bs-toggle="modal" data-bs-target="#loginModal"></div>  
+        </form>
+     <button class="bars-father" onclick="bars()">
+      <i class="fa-solid fa-bars" id="bars"></i>
+     </button>
+</div>
+     <div class="mini-reveal">
+      <form class="mini-search-sec">
+         
+        <div> <i class="fa-sharp fa-solid fa-magnifying-glass search" id="mar-icons1"></i></div> 
+        <div> <label id="mar">search</label></div> 
+        <div> <i class="fa-sharp fa-solid fa-cart-shopping " id="mar-icons" onclick="cart()"></i ></div> 
+        <div><labelm id="mar" >cart</label></div> 
+
+        <div style="display: flex;"><input type="button" value="Get started" id="mar1" data-bs-toggle="modal" data-bs-target="#loginModal"></div>  
+        </form>
+     </div>  
+  </nav>
+  
+</div>
+
+      <div class="pr-sec">
+     <div class="pr-child1">
+    <p>Filter</p>
+      <h2>Ankara styles <span>male & female</span></h2>
+      <div>
+        <ul>
+     <li class="btn-li"> <button class="pr-child1-btn">Sort by popular <label > <i class="fa-sharp fa-solid fa-chevron-down"></i></label></button>
+      <ul class="sort-drop">
+      <li> African style </li>
+      <li> japenese style </li>
+      <li> polland style </li>
+    </ul>
+  </li>
+    </ul>
+      
+      </div>
+     
+    
+
+     </div>
+     <div class="media-filter">
+      <p>filter</p>
+     </div>
+     <div class="par-filter">
+     <div class="filter-div">
+      <ul>
+        <li ><h3 class="hns">Gender</h3></li>
+        <li><input type="checkbox" value="male" onclick="check1()"> <label for="">Male</label></li>
+        <li><input type="checkbox" value="female"onclick="check2()"> <label >Female</label></li>
+        </ul>
+        <ul>
+        <li><h3 class="hns">Age group</h3></li>
+        <li><input type="checkbox" value=""> <label for="">Young</label></li>
+        <li><input type="checkbox" value=""> <label for="">Adult</label></li>
+        </ul>
+        <ul>
+        <li><h3 class="hns">Size</h3></li>
+        <li><input type="checkbox" value=""> <label for="">Small</label></li>
+        <li><input type="checkbox" value="">  <label for="">Medium</label></li>
+        <li><input type="checkbox" value=""> <label for="">Large</label></li>
+
+      </ul>
+    </div>
+   
+    </div>
+    <div class="media-btn">
+      <ul>
+        <li class="btn-li"> <button class="pr-child1-btn">Sort by popular <label > <i class="fa-sharp fa-solid fa-chevron-down"></i></label></button>
+         <ul class="sort-drop">
+         <li> African style </li>
+         <li> japenese style </li>
+         <li> polland style </li>
+       </ul>
+     </li>
+       </ul>
+    </div>
+    <div class="product-div">
+      <div class="card cards" id="male">
+        <img src="https://media.istockphoto.com/id/1469187574/photo/ripped-jeans-on-a-white-background-womens-clothing.jpg?s=612x612&w=0&k=20&c=U7RpEMJgFlBoh_HgAzwd9cQFVrUPcJYpxznBvFY6jLc=" class="card-img-top img1" alt="...">
+        <img src="https://media.istockphoto.com/id/1334510184/photo/blue-jeans-trouser-isolated-on-the-white-background.jpg?s=612x612&w=0&k=20&c=49h0QyLcX7bpbv0VGXSrXX7m0UtoszzR31_zNd-0DS8="  style="display: none;" class="img2" alt="...">
+        <img src="https://media.istockphoto.com/id/1142213171/photo/men-cut-black-t-shirt-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=wSFzYB2W127NFyVWbexCjAnVHQ-qc-bKDCewgzHKM8I="  style="display: none;" class="img3" class="card-img-top" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> jeans </h1>
+        <p> <label id="label1" class="gene">Gene: <span>Male </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+        </div>
+      <div class="card cards"  id="male">
+        <img src="https://media.istockphoto.com/id/1334510184/photo/blue-jeans-trouser-isolated-on-the-white-background.jpg?s=612x612&w=0&k=20&c=49h0QyLcX7bpbv0VGXSrXX7m0UtoszzR31_zNd-0DS8=" class="card-img-top img1" alt="...">
+        <img src="https://media.istockphoto.com/id/1400254177/photo/wooden-hangers-with-sweaters-over-beige-background-with-copy-space-clothing-donations.jpg?s=1024x1024&w=is&k=20&c=WbJwBkHFF6lV6mxacO1ZxLF_ucXYxl7rQUUBzAGIvvE="  style="display: none;" class="img2" alt="...">
+        <img src="https://media.istockphoto.com/id/1144491656/photo/mens-summer-casual-clothes-flat-lay.jpg?s=1024x1024&w=is&k=20&c=eNdzOb9bddMiQ80D4JvatafCeX3deh2g_qPX57TRr0w="  style="display: none;" class="img3" class="card-img-top" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> jet Black jeans </h1>
+        <p> <label id="label1" class="gene">Gene: <span>Male </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+        </div>
+      <div class="card cards"  id="male">
+        <img src="https://media.istockphoto.com/id/1142213171/photo/men-cut-black-t-shirt-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=wSFzYB2W127NFyVWbexCjAnVHQ-qc-bKDCewgzHKM8I=" class="card-img-top img1" alt="...">
+        <img src=""  style="display: none;" class="img2" alt="...">
+        <img src="https://media.istockphoto.com/id/1144491656/photo/mens-summer-casual-clothes-flat-lay.jpg?s=1024x1024&w=is&k=20&c=eNdzOb9bddMiQ80D4JvatafCeX3deh2g_qPX57TRr0w="  style="display: none;" class="img3" class="card-img-top" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> Black shirt </h1>
+        <p> <label id="label1" class="gene">Gene: <span>Male </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+        </div>
+      <div class="card cards"  id="male">
+        <img src="https://media.istockphoto.com/id/1427972687/photo/t-shirt-isolated.jpg?s=612x612&w=0&k=20&c=ioUj8cwglNDg0eEX4plQJL5Bqi5Awmx9Neo5xz4uSH0=" class="card-img-top img1" alt="...">
+        <img src="https://media.istockphoto.com/id/1400254177/photo/wooden-hangers-with-sweaters-over-beige-background-with-copy-space-clothing-donations.jpg?s=1024x1024&w=is&k=20&c=WbJwBkHFF6lV6mxacO1ZxLF_ucXYxl7rQUUBzAGIvvE="  style="display: none;" class="img2" alt="...">
+        <img src="https://media.istockphoto.com/id/1144491656/photo/mens-summer-casual-clothes-flat-lay.jpg?s=1024x1024&w=is&k=20&c=eNdzOb9bddMiQ80D4JvatafCeX3deh2g_qPX57TRr0w="  style="display: none;" class="img3" class="card-img-top" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> Blue shirt </h1>
+        <p> <label id="label1" class="gene">Gene: <span>Male </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+        </div>
+      
+      
+            <div class="card cards" id="male">
+        <img src="https://media.istockphoto.com/id/1003020428/photo/black-jeans-on-a-white-background-isolate-fashionable-concept.jpg?s=612x612&w=0&k=20&c=c2JDGvGylZMLzrUkOaQBQd1NHqb8mGPaEmUpEC2nrno=" class="card-img-top img1" alt="...">
+        <img src="https://media.istockphoto.com/id/1400254177/photo/wooden-hangers-with-sweaters-over-beige-background-with-copy-space-clothing-donations.jpg?s=1024x1024&w=is&k=20&c=WbJwBkHFF6lV6mxacO1ZxLF_ucXYxl7rQUUBzAGIvvE="  style="display: none;" class="img2" alt="...">
+        <img src="https://media.istockphoto.com/id/1144491656/photo/mens-summer-casual-clothes-flat-lay.jpg?s=1024x1024&w=is&k=20&c=eNdzOb9bddMiQ80D4JvatafCeX3deh2g_qPX57TRr0w="  style="display: none;" class="img3" class="card-img-top" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> Trouser </h1>
+        <p> <label id="label1" class="gene">Gene: <span>Male </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+      </div>
+            <div class="card cards" id="female">
+        <img src="https://media.istockphoto.com/id/1003018352/photo/blue-ragged-jeans-on-a-white-background-isolate-fashionable-concept.jpg?s=612x612&w=0&k=20&c=OmdshsiA26cDqfE1bUVIa1cM1koxPj_qpCcCDQa34gc=" class="card-img-top img1" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name">Damage style jeans</h1>
+        <p> <label id="label1" class="gene">Gene: <span>female </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+      </div>
+            <div class="card cards" id="female">
+        <img src="https://media.istockphoto.com/id/1188591895/photo/mens-t-shirt-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=ZrfiVdzqq7L0isiCDO6S-Lomn6Kzv43c12ktZgzWQ9g=" class="card-img-top" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> Black shirt </h1>
+        <p> <label id="label1" class="gene">Gene: <span>female </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+      </div>
+            <div class="card cards" id="female">
+        <img src="https://media.istockphoto.com/id/1165693363/photo/blue-womens-dress-female-dress-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=PKrf1b7Nd9brH3qpYlJ3IQvuJavxxM6HbzlzeD8C2EM=" class="card-img-top img1" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> Blue shirt</h1>
+        <p> <label id="label1" class="gene">Gene: <span>female </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+      </div>
+            <div class="card cards" id="female">
+        <img src="https://media.istockphoto.com/id/1163415875/photo/blue-ragged-jeans-on-a-white-background-clothing-concept-flat-lay-isolate.jpg?s=612x612&w=0&k=20&c=mNcCAMd8iyeGTggI4eNMSy4JB4VzTUt164WFXxzJ2TE=" class="card-img-top img1" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> Damage style jeans </h1>
+        <p> <label id="label1" class="gene">Gene: <span>female </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+      </div>
+            <div class="card cards" id="female">
+        <img src="https://media.istockphoto.com/id/926514864/photo/childrens-jeans-isolated-male.jpg?s=612x612&w=0&k=20&c=8c7I_8Ux4hina9cX-iOGwuKkLnXxSIb76t05Ee4FWvE=" class="card-img-top img1" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> Carbo jeans </h1>
+        <p> <label id="label1" class="gene">Gene: <span>female </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+      </div>
+            <div class="card cards" id="male">
+        <img src="https://media.istockphoto.com/id/1181500979/photo/woman-dress.jpg?s=612x612&w=0&k=20&c=jCafhysiSXWMGm6Cm-fgh5_tYDyBRs3-Af-piuaTZgE=" class="card-img-top img1" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> Red kurti </h1>
+        <p> <label id="label1" class="gene">Gene: <span>male </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+      </div>
+      <div class="card cards" id="male">
+        <img src="https://media.istockphoto.com/id/491785759/photo/t-shirt-blank-clothing.jpg?s=612x612&w=0&k=20&c=nEO0LOUlBbz3KNpNBsLzKVFX0AMMpkNESi7xbjSZ0c4=" class="card-img-top img1" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> Black shirt </h1>
+        <p> <label id="label1" class="gene">Gene: <span>female </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+    </div>
+      <div class="card cards" id="male">
+        <img src="https://media.istockphoto.com/id/1469187574/photo/ripped-jeans-on-a-white-background-womens-clothing.jpg?s=612x612&w=0&k=20&c=U7RpEMJgFlBoh_HgAzwd9cQFVrUPcJYpxznBvFY6jLc=" class="card-img-top img1" alt="...">
+        <img src="https://media.istockphoto.com/id/1334510184/photo/blue-jeans-trouser-isolated-on-the-white-background.jpg?s=612x612&w=0&k=20&c=49h0QyLcX7bpbv0VGXSrXX7m0UtoszzR31_zNd-0DS8="  style="display: none;" class="img2" alt="...">
+        <img src="https://media.istockphoto.com/id/1142213171/photo/men-cut-black-t-shirt-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=wSFzYB2W127NFyVWbexCjAnVHQ-qc-bKDCewgzHKM8I="  style="display: none;" class="img3" class="card-img-top" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> jeans </h1>
+        <p> <label id="label1" class="gene">Gene: <span>Male </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+        </div>
+      <div class="card cards"  id="male">
+        <img src="https://media.istockphoto.com/id/1334510184/photo/blue-jeans-trouser-isolated-on-the-white-background.jpg?s=612x612&w=0&k=20&c=49h0QyLcX7bpbv0VGXSrXX7m0UtoszzR31_zNd-0DS8=" class="card-img-top img1" alt="...">
+        <img src="https://media.istockphoto.com/id/1400254177/photo/wooden-hangers-with-sweaters-over-beige-background-with-copy-space-clothing-donations.jpg?s=1024x1024&w=is&k=20&c=WbJwBkHFF6lV6mxacO1ZxLF_ucXYxl7rQUUBzAGIvvE="  style="display: none;" class="img2" alt="...">
+        <img src="https://media.istockphoto.com/id/1144491656/photo/mens-summer-casual-clothes-flat-lay.jpg?s=1024x1024&w=is&k=20&c=eNdzOb9bddMiQ80D4JvatafCeX3deh2g_qPX57TRr0w="  style="display: none;" class="img3" class="card-img-top" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> jet Black jeans </h1>
+        <p> <label id="label1" class="gene">Gene: <span>Male </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+        </div>
+      <div class="card cards"  id="male">
+        <img src="https://media.istockphoto.com/id/1142213171/photo/men-cut-black-t-shirt-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=wSFzYB2W127NFyVWbexCjAnVHQ-qc-bKDCewgzHKM8I=" class="card-img-top img1" alt="...">
+        <img src=""  style="display: none;" class="img2" alt="...">
+        <img src="https://media.istockphoto.com/id/1144491656/photo/mens-summer-casual-clothes-flat-lay.jpg?s=1024x1024&w=is&k=20&c=eNdzOb9bddMiQ80D4JvatafCeX3deh2g_qPX57TRr0w="  style="display: none;" class="img3" class="card-img-top" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> Black shirt </h1>
+        <p> <label id="label1" class="gene">Gene: <span>Male </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+        </div>
+      <div class="card cards"  id="male">
+        <img src="https://media.istockphoto.com/id/1427972687/photo/t-shirt-isolated.jpg?s=612x612&w=0&k=20&c=ioUj8cwglNDg0eEX4plQJL5Bqi5Awmx9Neo5xz4uSH0=" class="card-img-top img1" alt="...">
+        <img src="https://media.istockphoto.com/id/1400254177/photo/wooden-hangers-with-sweaters-over-beige-background-with-copy-space-clothing-donations.jpg?s=1024x1024&w=is&k=20&c=WbJwBkHFF6lV6mxacO1ZxLF_ucXYxl7rQUUBzAGIvvE="  style="display: none;" class="img2" alt="...">
+        <img src="https://media.istockphoto.com/id/1144491656/photo/mens-summer-casual-clothes-flat-lay.jpg?s=1024x1024&w=is&k=20&c=eNdzOb9bddMiQ80D4JvatafCeX3deh2g_qPX57TRr0w="  style="display: none;" class="img3" class="card-img-top" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> Blue shirt </h1>
+        <p> <label id="label1" class="gene">Gene: <span>Male </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+        </div>
+      
+      
+            <div class="card cards" id="male">
+        <img src="https://media.istockphoto.com/id/1003020428/photo/black-jeans-on-a-white-background-isolate-fashionable-concept.jpg?s=612x612&w=0&k=20&c=c2JDGvGylZMLzrUkOaQBQd1NHqb8mGPaEmUpEC2nrno=" class="card-img-top img1" alt="...">
+        <img src="https://media.istockphoto.com/id/1400254177/photo/wooden-hangers-with-sweaters-over-beige-background-with-copy-space-clothing-donations.jpg?s=1024x1024&w=is&k=20&c=WbJwBkHFF6lV6mxacO1ZxLF_ucXYxl7rQUUBzAGIvvE="  style="display: none;" class="img2" alt="...">
+        <img src="https://media.istockphoto.com/id/1144491656/photo/mens-summer-casual-clothes-flat-lay.jpg?s=1024x1024&w=is&k=20&c=eNdzOb9bddMiQ80D4JvatafCeX3deh2g_qPX57TRr0w="  style="display: none;" class="img3" class="card-img-top" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> Trouser </h1>
+        <p> <label id="label1" class="gene">Gene: <span>Male </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+      </div>
+            <div class="card cards" id="female">
+        <img src="https://media.istockphoto.com/id/1003018352/photo/blue-ragged-jeans-on-a-white-background-isolate-fashionable-concept.jpg?s=612x612&w=0&k=20&c=OmdshsiA26cDqfE1bUVIa1cM1koxPj_qpCcCDQa34gc=" class="card-img-top img1" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name">Damage style jeans</h1>
+        <p> <label id="label1" class="gene">Gene: <span>female </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+      </div>
+            <div class="card cards" id="female">
+        <img src="https://media.istockphoto.com/id/1188591895/photo/mens-t-shirt-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=ZrfiVdzqq7L0isiCDO6S-Lomn6Kzv43c12ktZgzWQ9g=" class="card-img-top" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> Black shirt </h1>
+        <p> <label id="label1" class="gene">Gene: <span>female </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+      </div>
+            <div class="card cards" id="female">
+        <img src="https://media.istockphoto.com/id/1165693363/photo/blue-womens-dress-female-dress-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=PKrf1b7Nd9brH3qpYlJ3IQvuJavxxM6HbzlzeD8C2EM=" class="card-img-top img1" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> Blue shirt</h1>
+        <p> <label id="label1" class="gene">Gene: <span>female </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+      </div>
+            <div class="card cards" id="female">
+        <img src="https://media.istockphoto.com/id/1163415875/photo/blue-ragged-jeans-on-a-white-background-clothing-concept-flat-lay-isolate.jpg?s=612x612&w=0&k=20&c=mNcCAMd8iyeGTggI4eNMSy4JB4VzTUt164WFXxzJ2TE=" class="card-img-top img1" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> Damage style jeans </h1>
+        <p> <label id="label1" class="gene">Gene: <span>female </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+      </div>
+            <div class="card cards" id="female">
+        <img src="https://media.istockphoto.com/id/926514864/photo/childrens-jeans-isolated-male.jpg?s=612x612&w=0&k=20&c=8c7I_8Ux4hina9cX-iOGwuKkLnXxSIb76t05Ee4FWvE=" class="card-img-top img1" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> Carbo jeans </h1>
+        <p> <label id="label1" class="gene">Gene: <span>female </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+      </div>
+            <div class="card cards" id="male">
+        <img src="https://media.istockphoto.com/id/1181500979/photo/woman-dress.jpg?s=612x612&w=0&k=20&c=jCafhysiSXWMGm6Cm-fgh5_tYDyBRs3-Af-piuaTZgE=" class="card-img-top img1" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> Red kurti </h1>
+        <p> <label id="label1" class="gene">Gene: <span>male </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+      </div>
+      <div class="card cards" id="male">
+        <img src="https://media.istockphoto.com/id/491785759/photo/t-shirt-blank-clothing.jpg?s=612x612&w=0&k=20&c=nEO0LOUlBbz3KNpNBsLzKVFX0AMMpkNESi7xbjSZ0c4=" class="card-img-top img1" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> Black shirt </h1>
+        <p> <label id="label1" class="gene">Gene: <span>female </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+    </div>
+      <div class="card cards" id="male">
+        <img src="https://media.istockphoto.com/id/1469187574/photo/ripped-jeans-on-a-white-background-womens-clothing.jpg?s=612x612&w=0&k=20&c=U7RpEMJgFlBoh_HgAzwd9cQFVrUPcJYpxznBvFY6jLc=" class="card-img-top img1" alt="...">
+        <img src="https://media.istockphoto.com/id/1334510184/photo/blue-jeans-trouser-isolated-on-the-white-background.jpg?s=612x612&w=0&k=20&c=49h0QyLcX7bpbv0VGXSrXX7m0UtoszzR31_zNd-0DS8="  style="display: none;" class="img2" alt="...">
+        <img src="https://media.istockphoto.com/id/1142213171/photo/men-cut-black-t-shirt-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=wSFzYB2W127NFyVWbexCjAnVHQ-qc-bKDCewgzHKM8I="  style="display: none;" class="img3" class="card-img-top" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> jeans </h1>
+        <p> <label id="label1" class="gene">Gene: <span>Male </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+        </div>
+      <div class="card cards"  id="male">
+        <img src="https://media.istockphoto.com/id/1334510184/photo/blue-jeans-trouser-isolated-on-the-white-background.jpg?s=612x612&w=0&k=20&c=49h0QyLcX7bpbv0VGXSrXX7m0UtoszzR31_zNd-0DS8=" class="card-img-top img1" alt="...">
+        <img src="https://media.istockphoto.com/id/1400254177/photo/wooden-hangers-with-sweaters-over-beige-background-with-copy-space-clothing-donations.jpg?s=1024x1024&w=is&k=20&c=WbJwBkHFF6lV6mxacO1ZxLF_ucXYxl7rQUUBzAGIvvE="  style="display: none;" class="img2" alt="...">
+        <img src="https://media.istockphoto.com/id/1144491656/photo/mens-summer-casual-clothes-flat-lay.jpg?s=1024x1024&w=is&k=20&c=eNdzOb9bddMiQ80D4JvatafCeX3deh2g_qPX57TRr0w="  style="display: none;" class="img3" class="card-img-top" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> jet Black jeans </h1>
+        <p> <label id="label1" class="gene">Gene: <span>Male </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+        </div>
+      <div class="card cards"  id="male">
+        <img src="https://media.istockphoto.com/id/1142213171/photo/men-cut-black-t-shirt-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=wSFzYB2W127NFyVWbexCjAnVHQ-qc-bKDCewgzHKM8I=" class="card-img-top img1" alt="...">
+        <img src=""  style="display: none;" class="img2" alt="...">
+        <img src="https://media.istockphoto.com/id/1144491656/photo/mens-summer-casual-clothes-flat-lay.jpg?s=1024x1024&w=is&k=20&c=eNdzOb9bddMiQ80D4JvatafCeX3deh2g_qPX57TRr0w="  style="display: none;" class="img3" class="card-img-top" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> Black shirt </h1>
+        <p> <label id="label1" class="gene">Gene: <span>Male </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+        </div>
+      <div class="card cards"  id="male">
+        <img src="https://media.istockphoto.com/id/1427972687/photo/t-shirt-isolated.jpg?s=612x612&w=0&k=20&c=ioUj8cwglNDg0eEX4plQJL5Bqi5Awmx9Neo5xz4uSH0=" class="card-img-top img1" alt="...">
+        <img src="https://media.istockphoto.com/id/1400254177/photo/wooden-hangers-with-sweaters-over-beige-background-with-copy-space-clothing-donations.jpg?s=1024x1024&w=is&k=20&c=WbJwBkHFF6lV6mxacO1ZxLF_ucXYxl7rQUUBzAGIvvE="  style="display: none;" class="img2" alt="...">
+        <img src="https://media.istockphoto.com/id/1144491656/photo/mens-summer-casual-clothes-flat-lay.jpg?s=1024x1024&w=is&k=20&c=eNdzOb9bddMiQ80D4JvatafCeX3deh2g_qPX57TRr0w="  style="display: none;" class="img3" class="card-img-top" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> Blue shirt </h1>
+        <p> <label id="label1" class="gene">Gene: <span>Male </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+        </div>
+      
+      
+            <div class="card cards" id="male">
+        <img src="https://media.istockphoto.com/id/1003020428/photo/black-jeans-on-a-white-background-isolate-fashionable-concept.jpg?s=612x612&w=0&k=20&c=c2JDGvGylZMLzrUkOaQBQd1NHqb8mGPaEmUpEC2nrno=" class="card-img-top img1" alt="...">
+        <img src="https://media.istockphoto.com/id/1400254177/photo/wooden-hangers-with-sweaters-over-beige-background-with-copy-space-clothing-donations.jpg?s=1024x1024&w=is&k=20&c=WbJwBkHFF6lV6mxacO1ZxLF_ucXYxl7rQUUBzAGIvvE="  style="display: none;" class="img2" alt="...">
+        <img src="https://media.istockphoto.com/id/1144491656/photo/mens-summer-casual-clothes-flat-lay.jpg?s=1024x1024&w=is&k=20&c=eNdzOb9bddMiQ80D4JvatafCeX3deh2g_qPX57TRr0w="  style="display: none;" class="img3" class="card-img-top" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> Trouser </h1>
+        <p> <label id="label1" class="gene">Gene: <span>Male </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+      </div>
+            <div class="card cards" id="female">
+        <img src="https://media.istockphoto.com/id/1003018352/photo/blue-ragged-jeans-on-a-white-background-isolate-fashionable-concept.jpg?s=612x612&w=0&k=20&c=OmdshsiA26cDqfE1bUVIa1cM1koxPj_qpCcCDQa34gc=" class="card-img-top img1" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name">Damage style jeans</h1>
+        <p> <label id="label1" class="gene">Gene: <span>female </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+      </div>
+            <div class="card cards" id="female">
+        <img src="https://media.istockphoto.com/id/1188591895/photo/mens-t-shirt-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=ZrfiVdzqq7L0isiCDO6S-Lomn6Kzv43c12ktZgzWQ9g=" class="card-img-top" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> Black shirt </h1>
+        <p> <label id="label1" class="gene">Gene: <span>female </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+      </div>
+            <div class="card cards" id="female">
+        <img src="https://media.istockphoto.com/id/1165693363/photo/blue-womens-dress-female-dress-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=PKrf1b7Nd9brH3qpYlJ3IQvuJavxxM6HbzlzeD8C2EM=" class="card-img-top img1" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> Blue shirt</h1>
+        <p> <label id="label1" class="gene">Gene: <span>female </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+      </div>
+            <div class="card cards" id="female">
+        <img src="https://media.istockphoto.com/id/1163415875/photo/blue-ragged-jeans-on-a-white-background-clothing-concept-flat-lay-isolate.jpg?s=612x612&w=0&k=20&c=mNcCAMd8iyeGTggI4eNMSy4JB4VzTUt164WFXxzJ2TE=" class="card-img-top img1" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> Damage style jeans </h1>
+        <p> <label id="label1" class="gene">Gene: <span>female </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+      </div>
+            <div class="card cards" id="female">
+        <img src="https://media.istockphoto.com/id/926514864/photo/childrens-jeans-isolated-male.jpg?s=612x612&w=0&k=20&c=8c7I_8Ux4hina9cX-iOGwuKkLnXxSIb76t05Ee4FWvE=" class="card-img-top img1" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> Carbo jeans </h1>
+        <p> <label id="label1" class="gene">Gene: <span>female </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+      </div>
+            <div class="card cards" id="male">
+        <img src="https://media.istockphoto.com/id/1181500979/photo/woman-dress.jpg?s=612x612&w=0&k=20&c=jCafhysiSXWMGm6Cm-fgh5_tYDyBRs3-Af-piuaTZgE=" class="card-img-top img1" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> Red kurti </h1>
+        <p> <label id="label1" class="gene">Gene: <span>male </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+      </div>
+      <div class="card cards" id="male">
+        <img src="https://media.istockphoto.com/id/491785759/photo/t-shirt-blank-clothing.jpg?s=612x612&w=0&k=20&c=nEO0LOUlBbz3KNpNBsLzKVFX0AMMpkNESi7xbjSZ0c4=" class="card-img-top img1" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> Black shirt </h1>
+        <p> <label id="label1" class="gene">Gene: <span>female </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+    </div>
+      <div class="card cards" id="male">
+        <img src="https://media.istockphoto.com/id/1469187574/photo/ripped-jeans-on-a-white-background-womens-clothing.jpg?s=612x612&w=0&k=20&c=U7RpEMJgFlBoh_HgAzwd9cQFVrUPcJYpxznBvFY6jLc=" class="card-img-top img1" alt="...">
+        <img src="https://media.istockphoto.com/id/1334510184/photo/blue-jeans-trouser-isolated-on-the-white-background.jpg?s=612x612&w=0&k=20&c=49h0QyLcX7bpbv0VGXSrXX7m0UtoszzR31_zNd-0DS8="  style="display: none;" class="img2" alt="...">
+        <img src="https://media.istockphoto.com/id/1142213171/photo/men-cut-black-t-shirt-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=wSFzYB2W127NFyVWbexCjAnVHQ-qc-bKDCewgzHKM8I="  style="display: none;" class="img3" class="card-img-top" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> jeans </h1>
+        <p> <label id="label1" class="gene">Gene: <span>Male </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+        </div>
+      <div class="card cards"  id="male">
+        <img src="https://media.istockphoto.com/id/1334510184/photo/blue-jeans-trouser-isolated-on-the-white-background.jpg?s=612x612&w=0&k=20&c=49h0QyLcX7bpbv0VGXSrXX7m0UtoszzR31_zNd-0DS8=" class="card-img-top img1" alt="...">
+        <img src="https://media.istockphoto.com/id/1400254177/photo/wooden-hangers-with-sweaters-over-beige-background-with-copy-space-clothing-donations.jpg?s=1024x1024&w=is&k=20&c=WbJwBkHFF6lV6mxacO1ZxLF_ucXYxl7rQUUBzAGIvvE="  style="display: none;" class="img2" alt="...">
+        <img src="https://media.istockphoto.com/id/1144491656/photo/mens-summer-casual-clothes-flat-lay.jpg?s=1024x1024&w=is&k=20&c=eNdzOb9bddMiQ80D4JvatafCeX3deh2g_qPX57TRr0w="  style="display: none;" class="img3" class="card-img-top" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> jet Black jeans </h1>
+        <p> <label id="label1" class="gene">Gene: <span>Male </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+        </div>
+      <div class="card cards"  id="male">
+        <img src="https://media.istockphoto.com/id/1142213171/photo/men-cut-black-t-shirt-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=wSFzYB2W127NFyVWbexCjAnVHQ-qc-bKDCewgzHKM8I=" class="card-img-top img1" alt="...">
+        <img src=""  style="display: none;" class="img2" alt="...">
+        <img src="https://media.istockphoto.com/id/1144491656/photo/mens-summer-casual-clothes-flat-lay.jpg?s=1024x1024&w=is&k=20&c=eNdzOb9bddMiQ80D4JvatafCeX3deh2g_qPX57TRr0w="  style="display: none;" class="img3" class="card-img-top" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> Black shirt </h1>
+        <p> <label id="label1" class="gene">Gene: <span>Male </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+        </div>
+      <div class="card cards"  id="male">
+        <img src="https://media.istockphoto.com/id/1427972687/photo/t-shirt-isolated.jpg?s=612x612&w=0&k=20&c=ioUj8cwglNDg0eEX4plQJL5Bqi5Awmx9Neo5xz4uSH0=" class="card-img-top img1" alt="...">
+        <img src="https://media.istockphoto.com/id/1400254177/photo/wooden-hangers-with-sweaters-over-beige-background-with-copy-space-clothing-donations.jpg?s=1024x1024&w=is&k=20&c=WbJwBkHFF6lV6mxacO1ZxLF_ucXYxl7rQUUBzAGIvvE="  style="display: none;" class="img2" alt="...">
+        <img src="https://media.istockphoto.com/id/1144491656/photo/mens-summer-casual-clothes-flat-lay.jpg?s=1024x1024&w=is&k=20&c=eNdzOb9bddMiQ80D4JvatafCeX3deh2g_qPX57TRr0w="  style="display: none;" class="img3" class="card-img-top" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> Blue shirt </h1>
+        <p> <label id="label1" class="gene">Gene: <span>Male </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+        </div>
+      
+      
+            <div class="card cards" id="male">
+        <img src="https://media.istockphoto.com/id/1003020428/photo/black-jeans-on-a-white-background-isolate-fashionable-concept.jpg?s=612x612&w=0&k=20&c=c2JDGvGylZMLzrUkOaQBQd1NHqb8mGPaEmUpEC2nrno=" class="card-img-top img1" alt="...">
+        <img src="https://media.istockphoto.com/id/1400254177/photo/wooden-hangers-with-sweaters-over-beige-background-with-copy-space-clothing-donations.jpg?s=1024x1024&w=is&k=20&c=WbJwBkHFF6lV6mxacO1ZxLF_ucXYxl7rQUUBzAGIvvE="  style="display: none;" class="img2" alt="...">
+        <img src="https://media.istockphoto.com/id/1144491656/photo/mens-summer-casual-clothes-flat-lay.jpg?s=1024x1024&w=is&k=20&c=eNdzOb9bddMiQ80D4JvatafCeX3deh2g_qPX57TRr0w="  style="display: none;" class="img3" class="card-img-top" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> Trouser </h1>
+        <p> <label id="label1" class="gene">Gene: <span>Male </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+      </div>
+            <div class="card cards" id="female">
+        <img src="https://media.istockphoto.com/id/1003018352/photo/blue-ragged-jeans-on-a-white-background-isolate-fashionable-concept.jpg?s=612x612&w=0&k=20&c=OmdshsiA26cDqfE1bUVIa1cM1koxPj_qpCcCDQa34gc=" class="card-img-top img1" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name">Damage style jeans</h1>
+        <p> <label id="label1" class="gene">Gene: <span>female </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+      </div>
+            <div class="card cards" id="female">
+        <img src="https://media.istockphoto.com/id/1188591895/photo/mens-t-shirt-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=ZrfiVdzqq7L0isiCDO6S-Lomn6Kzv43c12ktZgzWQ9g=" class="card-img-top" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> Black shirt </h1>
+        <p> <label id="label1" class="gene">Gene: <span>female </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+      </div>
+            <div class="card cards" id="female">
+        <img src="https://media.istockphoto.com/id/1165693363/photo/blue-womens-dress-female-dress-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=PKrf1b7Nd9brH3qpYlJ3IQvuJavxxM6HbzlzeD8C2EM=" class="card-img-top img1" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> Blue shirt</h1>
+        <p> <label id="label1" class="gene">Gene: <span>female </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+      </div>
+            <div class="card cards" id="female">
+        <img src="https://media.istockphoto.com/id/1163415875/photo/blue-ragged-jeans-on-a-white-background-clothing-concept-flat-lay-isolate.jpg?s=612x612&w=0&k=20&c=mNcCAMd8iyeGTggI4eNMSy4JB4VzTUt164WFXxzJ2TE=" class="card-img-top img1" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> Damage style jeans </h1>
+        <p> <label id="label1" class="gene">Gene: <span>female </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+      </div>
+            <div class="card cards" id="female">
+        <img src="https://media.istockphoto.com/id/926514864/photo/childrens-jeans-isolated-male.jpg?s=612x612&w=0&k=20&c=8c7I_8Ux4hina9cX-iOGwuKkLnXxSIb76t05Ee4FWvE=" class="card-img-top img1" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> Carbo jeans </h1>
+        <p> <label id="label1" class="gene">Gene: <span>female </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+      </div>
+            <div class="card cards" id="male">
+        <img src="https://media.istockphoto.com/id/1181500979/photo/woman-dress.jpg?s=612x612&w=0&k=20&c=jCafhysiSXWMGm6Cm-fgh5_tYDyBRs3-Af-piuaTZgE=" class="card-img-top img1" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> Red kurti </h1>
+        <p> <label id="label1" class="gene">Gene: <span>male </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+      </div>
+      <div class="card cards" id="male">
+        <img src="https://media.istockphoto.com/id/491785759/photo/t-shirt-blank-clothing.jpg?s=612x612&w=0&k=20&c=nEO0LOUlBbz3KNpNBsLzKVFX0AMMpkNESi7xbjSZ0c4=" class="card-img-top img1" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> Black shirt </h1>
+        <p> <label id="label1" class="gene">Gene: <span>female </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+    </div>
+      <div class="card cards" id="male">
+        <img src="https://media.istockphoto.com/id/1469187574/photo/ripped-jeans-on-a-white-background-womens-clothing.jpg?s=612x612&w=0&k=20&c=U7RpEMJgFlBoh_HgAzwd9cQFVrUPcJYpxznBvFY6jLc=" class="card-img-top img1" alt="...">
+        <img src="https://media.istockphoto.com/id/1334510184/photo/blue-jeans-trouser-isolated-on-the-white-background.jpg?s=612x612&w=0&k=20&c=49h0QyLcX7bpbv0VGXSrXX7m0UtoszzR31_zNd-0DS8="  style="display: none;" class="img2" alt="...">
+        <img src="https://media.istockphoto.com/id/1142213171/photo/men-cut-black-t-shirt-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=wSFzYB2W127NFyVWbexCjAnVHQ-qc-bKDCewgzHKM8I="  style="display: none;" class="img3" class="card-img-top" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> jeans </h1>
+        <p> <label id="label1" class="gene">Gene: <span>Male </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+        </div>
+      <div class="card cards"  id="male">
+        <img src="https://media.istockphoto.com/id/1334510184/photo/blue-jeans-trouser-isolated-on-the-white-background.jpg?s=612x612&w=0&k=20&c=49h0QyLcX7bpbv0VGXSrXX7m0UtoszzR31_zNd-0DS8=" class="card-img-top img1" alt="...">
+        <img src="https://media.istockphoto.com/id/1400254177/photo/wooden-hangers-with-sweaters-over-beige-background-with-copy-space-clothing-donations.jpg?s=1024x1024&w=is&k=20&c=WbJwBkHFF6lV6mxacO1ZxLF_ucXYxl7rQUUBzAGIvvE="  style="display: none;" class="img2" alt="...">
+        <img src="https://media.istockphoto.com/id/1144491656/photo/mens-summer-casual-clothes-flat-lay.jpg?s=1024x1024&w=is&k=20&c=eNdzOb9bddMiQ80D4JvatafCeX3deh2g_qPX57TRr0w="  style="display: none;" class="img3" class="card-img-top" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> jet Black jeans </h1>
+        <p> <label id="label1" class="gene">Gene: <span>Male </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+        </div>
+      <div class="card cards"  id="male">
+        <img src="https://media.istockphoto.com/id/1142213171/photo/men-cut-black-t-shirt-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=wSFzYB2W127NFyVWbexCjAnVHQ-qc-bKDCewgzHKM8I=" class="card-img-top img1" alt="...">
+        <img src=""  style="display: none;" class="img2" alt="...">
+        <img src="https://media.istockphoto.com/id/1144491656/photo/mens-summer-casual-clothes-flat-lay.jpg?s=1024x1024&w=is&k=20&c=eNdzOb9bddMiQ80D4JvatafCeX3deh2g_qPX57TRr0w="  style="display: none;" class="img3" class="card-img-top" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> Black shirt </h1>
+        <p> <label id="label1" class="gene">Gene: <span>Male </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+        </div>
+      <div class="card cards"  id="male">
+        <img src="https://media.istockphoto.com/id/1427972687/photo/t-shirt-isolated.jpg?s=612x612&w=0&k=20&c=ioUj8cwglNDg0eEX4plQJL5Bqi5Awmx9Neo5xz4uSH0=" class="card-img-top img1" alt="...">
+        <img src="https://media.istockphoto.com/id/1400254177/photo/wooden-hangers-with-sweaters-over-beige-background-with-copy-space-clothing-donations.jpg?s=1024x1024&w=is&k=20&c=WbJwBkHFF6lV6mxacO1ZxLF_ucXYxl7rQUUBzAGIvvE="  style="display: none;" class="img2" alt="...">
+        <img src="https://media.istockphoto.com/id/1144491656/photo/mens-summer-casual-clothes-flat-lay.jpg?s=1024x1024&w=is&k=20&c=eNdzOb9bddMiQ80D4JvatafCeX3deh2g_qPX57TRr0w="  style="display: none;" class="img3" class="card-img-top" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> Blue shirt </h1>
+        <p> <label id="label1" class="gene">Gene: <span>Male </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+        </div>
+      
+      
+            <div class="card cards" id="male">
+        <img src="https://media.istockphoto.com/id/1003020428/photo/black-jeans-on-a-white-background-isolate-fashionable-concept.jpg?s=612x612&w=0&k=20&c=c2JDGvGylZMLzrUkOaQBQd1NHqb8mGPaEmUpEC2nrno=" class="card-img-top img1" alt="...">
+        <img src="https://media.istockphoto.com/id/1400254177/photo/wooden-hangers-with-sweaters-over-beige-background-with-copy-space-clothing-donations.jpg?s=1024x1024&w=is&k=20&c=WbJwBkHFF6lV6mxacO1ZxLF_ucXYxl7rQUUBzAGIvvE="  style="display: none;" class="img2" alt="...">
+        <img src="https://media.istockphoto.com/id/1144491656/photo/mens-summer-casual-clothes-flat-lay.jpg?s=1024x1024&w=is&k=20&c=eNdzOb9bddMiQ80D4JvatafCeX3deh2g_qPX57TRr0w="  style="display: none;" class="img3" class="card-img-top" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> Trouser </h1>
+        <p> <label id="label1" class="gene">Gene: <span>Male </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+      </div>
+            <div class="card cards" id="female">
+        <img src="https://media.istockphoto.com/id/1003018352/photo/blue-ragged-jeans-on-a-white-background-isolate-fashionable-concept.jpg?s=612x612&w=0&k=20&c=OmdshsiA26cDqfE1bUVIa1cM1koxPj_qpCcCDQa34gc=" class="card-img-top img1" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name">Damage style jeans</h1>
+        <p> <label id="label1" class="gene">Gene: <span>female </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+      </div>
+            <div class="card cards" id="female">
+        <img src="https://media.istockphoto.com/id/1188591895/photo/mens-t-shirt-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=ZrfiVdzqq7L0isiCDO6S-Lomn6Kzv43c12ktZgzWQ9g=" class="card-img-top" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> Black shirt </h1>
+        <p> <label id="label1" class="gene">Gene: <span>female </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+      </div>
+            <div class="card cards" id="female">
+        <img src="https://media.istockphoto.com/id/1165693363/photo/blue-womens-dress-female-dress-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=PKrf1b7Nd9brH3qpYlJ3IQvuJavxxM6HbzlzeD8C2EM=" class="card-img-top img1" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> Blue shirt</h1>
+        <p> <label id="label1" class="gene">Gene: <span>female </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+      </div>
+            <div class="card cards" id="female">
+        <img src="https://media.istockphoto.com/id/1163415875/photo/blue-ragged-jeans-on-a-white-background-clothing-concept-flat-lay-isolate.jpg?s=612x612&w=0&k=20&c=mNcCAMd8iyeGTggI4eNMSy4JB4VzTUt164WFXxzJ2TE=" class="card-img-top img1" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> Damage style jeans </h1>
+        <p> <label id="label1" class="gene">Gene: <span>female </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+      </div>
+            <div class="card cards" id="female">
+        <img src="https://media.istockphoto.com/id/926514864/photo/childrens-jeans-isolated-male.jpg?s=612x612&w=0&k=20&c=8c7I_8Ux4hina9cX-iOGwuKkLnXxSIb76t05Ee4FWvE=" class="card-img-top img1" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> Carbo jeans </h1>
+        <p> <label id="label1" class="gene">Gene: <span>female </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+      </div>
+            <div class="card cards" id="male">
+        <img src="https://media.istockphoto.com/id/1181500979/photo/woman-dress.jpg?s=612x612&w=0&k=20&c=jCafhysiSXWMGm6Cm-fgh5_tYDyBRs3-Af-piuaTZgE=" class="card-img-top img1" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> Red kurti </h1>
+        <p> <label id="label1" class="gene">Gene: <span>male </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+      </div>
+      <div class="card cards" id="male">
+        <img src="https://media.istockphoto.com/id/491785759/photo/t-shirt-blank-clothing.jpg?s=612x612&w=0&k=20&c=nEO0LOUlBbz3KNpNBsLzKVFX0AMMpkNESi7xbjSZ0c4=" class="card-img-top img1" alt="...">
+        <div class="card-body content">
+          <div class="crd-cont">
+           
+        <h1 class="name"> Black shirt </h1>
+        <p> <label id="label1" class="gene">Gene: <span>female </span></label>  . <label id="label2" class="age">Age: <span>Young</span></label></p>
+       
+          </div>
+        
+          <div class="cont-div2">
+            <h3 class="pri">PKR: 1500</h3>
+        <i class="fa-sharp fa-solid fa-cart-shopping add-to-cart" id="c-cart"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+            
+          </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- footer -->
+  <div class="footer">
+    <div class="footer-ch1">
+<ul>
+  <li><h1>HELP & INFORMATION</h1></li>
+  <li><p>Help</p></li>
+  <li><p>Track order</p></li>
+  <li><p>Delivery & return</p></li>
+  <li><p>Siteman</p></li>
+</ul>
+<ul>
+  <li><h1>ABOUT FASHIONFORALL</h1></li>
+  <li><p>About us</p></li>
+  <li><p>Career at FashionForall</p></li>
+  <li><p>Corporate & responsibility</p></li>
+  <li><p>Invester's site</p></li>
+</ul>
+<ul>
+  <li><h1>MORE FROM FASHIONFORALL</h1></li>
+  <li><p>FashionForall marketplace</p></li>
+  <li><p>Gift vouchers</p></li>
+  <li><p>Events</p></li>
+  <li><p>Siteman</p></li>
+</ul>
+<ul>
+  <li><h1>Cookies</h1></li>
+  <li><p>FashionForall marketplace</p></li>
+  <li><p>Gift vouchers</p></li>
+  <li><p>Events</p></li>
+  <li><p>Siteman</p></li>
+</ul>
+    </div >
+
+    <div class="findus">
+     <h1>find us on</h1>
+    </div>
+   <div class="icons">
+      <img src="facebook_145802.png" alt="" height="40px">
+      <img src="instagram_3955024.png" alt="" height="40px">
+      <img src="whatsapp_3670051.png" alt=""height="40px">
+   </div>
+<script>
+  function bars(){
+    document.getElementById('mini-menus').classList.toggle('active');
+}
+function cart(){
+   
+   document.getElementById('cart-slider').classList.toggle('cart-active');
+}
+function log(){
+   
+   document.getElementById('sign-form').style.display="none";
+   document.getElementById('log-forms').style.display="block";
+   document.getElementById('logbtns').style.display="flex";
+}
+function sign(){
+   
+   document.getElementById('sign-form').style.display="flex";
+   document.getElementById('log-forms').style.display="none";
+   document.getElementById('logbtns').style.display="none";
+}
+
+// function view(){
+//     document.querySelectorAll("#view").classList.toggle("views");
+// }
+// function view(){
+
+//     document.getElementsByid('sorts').style.display="none";
+//     }
+function view(){
+    document.getElementById('sorts').style.display="none";
+    document.getElementById('less').style.display="flex";
+    document.getElementById('fashion').style.display="none";
+    var all=document.querySelectorAll('#view');
+     for(var i=0; i<=all.length; i++){
+   all[i].style.display="block";
+     }
+   
+    }
+function viewless(){
+    document.getElementById('sorts').style.display="flex";
+    document.getElementById('less').style.display="none";
+    document.getElementById('fashion').style.display="block";
+    var all=document.querySelectorAll('#view');
+     for(var i=0; i<=all.length; i++){
+   all[i].style.display="none";
+     }
+   
+    }
+
+    function search(){
+      window.scrollTo({top: 0, behavior:"smooth"});
+      var searchdata=document.getElementById('top-input').value.toLowerCase();
+      var allproducts=document.querySelectorAll('.cards');
+     
+    
+      for (i=0 ; i < allproducts.length;i++){
+        var match=allproducts[i].textContent.toLowerCase();
+      
+          if(match.includes(searchdata)){
+            allproducts[i].style.display="flex";
+            
+          }
+            else{
+              allproducts[i].style.display="none";
+            
+            }
+          }
+        }
+
+
+        function check1(){
+    
+    var fema=document.querySelectorAll('#female');
+     for(var i=0; i<=fema.length; i++){
+   fema[i].style.display="none";
+  
+     }
+   
+    }
+        function check2(){
+    
+    var mal =document.querySelectorAll('#male');
+     for(var i=0; i<=mal.length; i++){
+   mal[i].style.display="none";
+ 
+     }
+   
+    }
+   
+
+// cart
+
+	  
+	 const products = document.querySelectorAll('.card');
+	  const addToCartButtons = document.querySelectorAll('.add-to-cart');
+	  const cartList = document.querySelector('.modal-size');
+	  const cartTotal = document.querySelector('.cart p');
+	  
+	  let cartItems = [];
+	  let total =0;
+	  
+	  products.forEach((product,index) => {
+		const productName = product.querySelector('.name').innerText;
+		const productage = product.querySelector('.age').innerText;
+		const productgen = product.querySelector('.gene').innerText;
+		const productPrice = product.querySelector('.pri').innerText;
+	  
+		addToCartButtons[index].addEventListener('click', () => {
+	  
+          cartList.innerHTML= cart()
+          function cart(){
+            return(`
+   
+
+        <div class="fath-cart">
+          <div class="cart-img">
+            <div class="img-three">
+              <img src="https://media.istockphoto.com/id/1144491656/photo/mens-summer-casual-clothes-flat-lay.jpg?s=1024x1024&w=is&k=20&c=eNdzOb9bddMiQ80D4JvatafCeX3deh2g_qPX57TRr0w="  class="cart-photo" id="cart-img" alt="" srcset="">
+              <img src="https://media.istockphoto.com/id/1144491656/photo/mens-summer-casual-clothes-flat-lay.jpg?s=1024x1024&w=is&k=20&c=eNdzOb9bddMiQ80D4JvatafCeX3deh2g_qPX57TRr0w=" alt=""  id="cart-img1"  srcset="">
+              <img src="https://images.unsplash.com/photo-1594750863984-8be99377ce41?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80"  id="cart-img2" alt="" srcset="">
+              <img src="https://media.istockphoto.com/id/1400254177/photo/wooden-hangers-with-sweaters-over-beige-background-with-copy-space-clothing-donations.jpg?s=1024x1024&w=is&k=20&c=WbJwBkHFF6lV6mxacO1ZxLF_ucXYxl7rQUUBzAGIvvE=" id="cart-img3" alt="" srcset="">
+            </div>
+              <div class="sel-img">
+                  <img src="https://media.istockphoto.com/id/1144491656/photo/mens-summer-casual-clothes-flat-lay.jpg?s=1024x1024&w=is&k=20&c=eNdzOb9bddMiQ80D4JvatafCeX3deh2g_qPX57TRr0w=" class="sel-img1" id="mini1" alt="" srcset="">
+                  <img src="https://images.unsplash.com/photo-1594750863984-8be99377ce41?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80"  class="sel-img2" id="mini2" alt="" srcset="">
+                  <img src="https://media.istockphoto.com/id/1400254177/photo/wooden-hangers-with-sweaters-over-beige-background-with-copy-space-clothing-donations.jpg?s=1024x1024&w=is&k=20&c=WbJwBkHFF6lV6mxacO1ZxLF_ucXYxl7rQUUBzAGIvvE=" class="sel-img3" id="mini3" alt="" srcset="">
+              </div>
+          </div>
+          <div class="cart-sec">
+            <div class="cart-half1">
+              <div class="half1-ch1">
+              <div class="pname"><h1>${productName}</h1></div>
+              <div class="detail">
+            <label>lorem ipusm</label>
+            <label >-</label>
+            <label>${productage}</label>
+            <label >-</label>
+            <label>${productgen}</label>
+              </div>
+              <div class="stock">
+               <ul>
+                <li>In stock</li>
+               </ul>
+               <label >Upto 2 weeks</label>
+               
+              </div>
+              <h1 class="pkr">${productPrice}</h1>
+            </div>
+            <div class="half1-ch2"> 
+          <div class="size">
+          <p>Size</p>
+          <select>
+            <option >small</option>
+            <option >smedium</option>
+            <option >large</option>
+          </select>
+          <p> Quantity</p>
+          <div class="quantity">
+          <label class="plus">-</label><label>1</label><label class="plus">+</label>
+        </div>
+          </div>
+        </div>
+      </div>
+        <div class="cart-half2">
+          <div class="end">
+            <div class="label">
+          <label >Estimated Shipping Date : <span class="date">jul 29, 2023</span></label>
+          </div>
+          <input type="button" value="Add to Cart">
+          <ul class="ul-1" >
+            <li><label>Product Description</label><label>></label>
+            <ul class="dis-drop">
+              <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam temporibus cupiditate odit. Exercitationem qui placeat, cumque architecto cum consequatur eaque? Inventore sed soluta illum ducimus fugiat nemo qui id dolorum!</li>
+            </ul></li>
+          </ul>
+          <ul class="ul-2">
+            <li><label>Product Description</label><label>></label>
+            <ul class="dis-drop">
+              <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam temporibus cupiditate odit. Exercitationem qui placeat, cumque architecto cum consequatur eaque? Inventore sed soluta illum ducimus fugiat nemo qui id dolorum!</li>
+            </ul></li>
+          </ul>
+          </div>
+        </div>
+          </div>
+                </div>
+
+
+
+          `);
+          }
+
+		});
+	  });
+</script>
+ 
+</body>
+</html>

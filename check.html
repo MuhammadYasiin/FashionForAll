@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<!-- <script src="check.js"></script> -->
+</head>
+<style>
+		.cart {
+	  border: 1px solid black;
+	  padding: 10px;
+	  margin-top: 20px;
+	}
+	
+	.cart ul {
+	  list-style: none;
+	  margin: 0;
+	  padding: 0;
+	}
+	
+	.cart li {
+	  margin-bottom: 10px;
+	}
+	
+	.cart p {
+	  font-weight: bold;
+	}
+:\ body {
+		font-family: Arial, sans-serif;
+	}
+	
+	header {
+		background-color: #333;
+		color: #fff;
+		padding: 20px;
+	}
+	
+	h1 {
+		margin: 0;
+	}
+	
+	main {
+		padding: 20px;
+	}
+	
+	footer {
+		background-color: #333;
+		color: #fff;
+		padding: 20px;
+		text-align: center;
+	}
+</style>
+<body>
+	
+	<div class="product">
+		<h2>Product 1</h2>
+		<p>10.00</p>
+		<button class="add-to-cart">Add to Cart</button>
+	  </div>
+	  
+	  <div class="product">
+		<h2>Product 2</h2>
+		<p>20.00</p>
+		<button class="add-to-cart">Add to Cart</button>
+	  </div>
+	  
+	  <div class="cart">
+		<h2>Cart</h2>
+		<ul></ul>
+		<p>$0.00</p>
+	  </div>
+	  
+
+	  
+	  
+<script>
+	  
+	  const products = document.querySelectorAll('.product');
+	  const addToCartButtons = document.querySelectorAll('.add-to-cart');
+	  const cartList = document.querySelector('.cart ul');
+	  const cartTotal = document.querySelector('.cart p');
+	  
+	  let cartItems = [];
+	  let total =0;
+	  
+	  products.forEach((product,index) => {
+		const productName = product.querySelector('h2').innerText;
+		const productPrice = product.querySelector('p').innerText;
+	  
+		addToCartButtons[index].addEventListener('click', () => {
+	  
+		  const cartItem = document.createElement('li');
+		  cartItem.innerText = `${productName} - $${productPrice}`;
+		  cartList.appendChild(cartItem);
+	  
+		  total += parseInt(productPrice);
+		  cartTotal.innerText = total;
+		});
+	  });
+	</script>
+
+	
+	
+	
+	
+	
+
+
+</body>
+</html>

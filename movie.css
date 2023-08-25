@@ -1,0 +1,13 @@
+.nav-menus{
+  margin-right: 50px;
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+ 
+}
+.in-nav-menu{
+    width: 100%;
+  display: flex;
+  justify-content: space-around;
+
+}
